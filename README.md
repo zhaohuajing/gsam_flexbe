@@ -1,15 +1,16 @@
-# FlexBE States and Behaviors for gsam
+# FlexBE States and Behaviors for GraspSAM
 
-Generic template for a behaviors repository to be used for new projects
+This raw repository has several folders and files with the generic name `gsam` for **GraspSAM**. 
 
-Modify this README as needed for your specific project details.
+## Prerequisite:
 
-Below we provide basic details, but you are free to delete or modify this README as you wish.
+- Clone the **source code** for GraspSAM under https://github.com/zhaohuajing/compare_GraspSAM/tree/d0a895cab9ab6b8ed8dcb75e92a4105c54ae5583.
+- Clone the **ROS 2 Server** for GraspSAM under https://github.com/zhaohuajing/GraspSam_ros2, which can be built into a `graspsam_ros2` package that includes the msg `RunGraspSAM.srv` and two ROS2 servers:
+  - `graspsam_server.py` for test run without real-time inputs. 
+  - `graspsam_cam2pose_server.py` for integration with **real-time RGB-D inputs** and optionally **segmentation masks**.
+- Setup the Docker environment using the docker files under https://github.com/zhaohuajing/GraspSam_ros2/blob/main/graspsam_docker/Dockerfile.
 
-----
-
-This raw repository has several folders and files with the generic name `gsam`.
-
+---
 
 This repository is used by the FlexBE widget 
 [`create_repo`](https://github.com/FlexBE/flexbe_behavior_engine/blob/ros2-devel/flexbe_widget/bin/create_repo) 
