@@ -109,6 +109,22 @@ The provided behavior (`UnseenObjClusterGraspSamPipeine`) expects these services
 - `/run_graspsam` (GraspSAM ROS 2 server)
 - `/move_to_pose` (MoveIt/OMPL execution server)
 
+Consider adding the following nodes to your launch file: 
+```text
+uoc_rgbd_bringup = Node(
+    package="unseen_obj_clst_ros2",
+    executable="segmentation_rgbd_server",
+    name="segmentation_rgbd_server",
+    output="screen",
+)
+
+graspsam_bringup = Node(
+    package="graspsam_ros2",
+    executable="graspsam_server.py",
+    name="graspsam_server",
+    output="screen",
+)
+```
 
 ### 3) Start FlexBE and run the behavior
 
