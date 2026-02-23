@@ -4,11 +4,11 @@ This raw repository has several folders and files with the generic name `gsam` f
 
 ## Prerequisite:
 
-- Clone the **source code** for GraspSAM under https://github.com/zhaohuajing/compare_GraspSAM/tree/d0a895cab9ab6b8ed8dcb75e92a4105c54ae5583.
-- Clone the **ROS 2 Server** for GraspSAM under https://github.com/zhaohuajing/GraspSam_ros2, which can be built into a `graspsam_ros2` package that includes the msg `RunGraspSAM.srv` and two ROS2 servers:
+- Clone the **source code** for GraspSAM under [compare_GraspSAM](https://github.com/zhaohuajing/compare_GraspSAM/tree/master).
+- Clone the **ROS 2 Server** for GraspSAM under [GraspSam_ros2](https://github.com/zhaohuajing/GraspSam_ros2), which can be built into a `graspsam_ros2` package that includes the msg `RunGraspSAM.srv` and two ROS2 servers:
   - `graspsam_server.py` for test run without real-time inputs. 
   - `graspsam_cam2pose_server.py` for integration with **real-time RGB-D inputs** and optionally **segmentation masks**.
-- Setup the Docker environment using the docker files under https://github.com/zhaohuajing/GraspSam_ros2/blob/main/graspsam_docker/Dockerfile.
+- Setup the **Docker environment** using the docker files under [graspsam_docker](https://github.com/zhaohuajing/GraspSam_ros2/blob/main/graspsam_docker/Dockerfile).
 
 ---
 
