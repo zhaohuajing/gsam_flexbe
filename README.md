@@ -78,15 +78,15 @@ High-level flow:
 │   ├── setup.cfg
 │   └── setup.py
 ├── gsam_flexbe_states
-│   ├── CHANGELOG.rst
-│   ├── gsam_flexbe_states
-│   │   ├── __init__.py
-│   │   └── graspsam_service_state.py
-│   ├── package.xml
-│   ├── resource
-│   │   └── gsam_flexbe_states
-│   ├── setup.cfg
-│   └── setup.py
+    ├── CHANGELOG.rst
+    ├── gsam_flexbe_states
+    │   ├── __init__.py
+    │   └── graspsam_service_state.py
+    ├── package.xml
+    ├── resource
+    │   └── gsam_flexbe_states
+    ├── setup.cfg
+    └── setup.py
 ```
 
 ## Quick Start
@@ -105,9 +105,9 @@ source install/setup.bash
 
 The provided behavior (`UnseenObjClusterGraspSamPipeine`) expects these services:
 
-- `/segmentation_rgbd` (UOC segmentation server)
-- `/run_graspsam` (GraspSAM ROS 2 server)
-- `/move_to_pose` (MoveIt/OMPL execution server)
+- `/segmentation_rgbd` (UOC segmentation server): setup from https://github.com/zhaohuajing/unseen_object_clustering_ros2
+- `/run_graspsam` (GraspSAM ROS 2 server): setup from https://github.com/zhaohuajing/GraspSam_ros2/tree/main
+- `/move_to_pose` (MoveIt/OMPL execution server): setup from https://github.com/flynnbm/armada_ros2
 
 Consider adding the following nodes to your launch file: 
 ```text
